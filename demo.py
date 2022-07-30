@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 import numpy as np
 from pyzbar.pyzbar import decode
 
-IMAGE_PATH = 'IMG_3087.JPG'
+IMAGE_PATH = 'Media/IMG_3087.JPG'
 image = cv2.imread(IMAGE_PATH)
 width = image.shape[1]
 height = image.shape[0]
