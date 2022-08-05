@@ -1,11 +1,9 @@
-import easyocr
 import cv2
+import easyocr
 from matplotlib import pyplot as plt
-import numpy as np
-from pyzbar.pyzbar import decode
-import torch
 
-IMAGE_PATH = 'the_photo.jpg'
+# TODO implement image path reference
+IMAGE_PATH = ''
 
 
 def resize_image(path):

@@ -43,4 +43,4 @@ def get_string(img_path):
     return result
 
 
-print(get_string('Media/IMG_3105_rot.JPG'))
+print(get_string('Media/IMG_3105_rotJPG'))
