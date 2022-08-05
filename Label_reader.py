@@ -5,7 +5,7 @@ import numpy as np
 from pyzbar.pyzbar import decode
 import torch
 
-IMAGE_PATH = 'Media/IMG_3088.JPG'
+IMAGE_PATH = 'Media/IMG_3105.jpg'
 
 
 def get_grayscale(image):
@@ -115,8 +115,8 @@ def simple_reader(image):
     for detection in result:
         text = detection[1]
         if 'ARM' in text:
-            text = text.split()
-            for l in text:
+            text_alt = text.split()
+            for l in text_alt:
                 if 'ARM' in l:
                     return_dict['arm_code'] = l
         if 'AYRE' in text:
@@ -129,5 +129,5 @@ def simple_reader(image):
 
 
 img = resize_image(IMAGE_PATH)
-img = get_grayscale(img)
+# img = get_grayscale(img)
 print(simple_reader(img))
